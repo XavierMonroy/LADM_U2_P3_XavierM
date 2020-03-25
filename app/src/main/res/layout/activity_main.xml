@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#53A556"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/contorno"
+        android:text=" Juego de Dados "
+        android:textColor="#FDFCFC"
+        android:textSize="28sp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnJugar"
+            android:layout_width="180dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="70dp"
+            android:background="#FF9800"
+            android:text="Jugar"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="141dp"
+            android:layout_height="179dp"
+            app:srcCompat="@drawable/dados" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="left"
+            android:background="@drawable/cerrar" />
+
+        <Button
+            android:id="@+id/btnAcerca"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="580dp"
+            android:background="@drawable/pregunta" />
+    </LinearLayout>
+
+</LinearLayout>
